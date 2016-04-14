@@ -31,8 +31,8 @@ gulp.task('minify', function() {
 });
 
 
-gulp.task('default', ['less', 'minify']);
+gulp.task('default', ['less']);
 
 gulp.task('watch', function () {
-    gulp.watch(['less/**/*.less'], ['less', 'minify']);
+    gulp.watch(['less/**/*.less'], ['less']);
 });
