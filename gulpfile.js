@@ -34,5 +34,5 @@ gulp.task('minify', function() {
 gulp.task('default', ['less', 'minify']);
 
 gulp.task('watch', function () {
-    gulp.watch(['public/less/**/*.less'], ['less', 'minify']);
+    gulp.watch(['less/**/*.less'], ['less', 'minify']);
 });

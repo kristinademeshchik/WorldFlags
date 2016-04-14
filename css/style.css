@@ -3,11 +3,24 @@
   display: block;
   clear: both;
 }
+body {
+  font-family: Arial;
+  background: #fff;
+}
 .container {
   text-align: center;
 }
+.container__title {
+  max-width: 1042px;
+  margin: 0 auto 10px auto;
+  font-size: 33px;
+  color: #4A4747;
+  text-align: left;
+}
 .container__map {
   display: inline-block;
+  border: 1px solid #BABCBD;
+  padding: 20px;
 }
 .flag-icon-background {
   background-size: contain;

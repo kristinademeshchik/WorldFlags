@@ -17,6 +17,15 @@
             wrapper.appendChild(flag);
         };
 
+        countryElements[i].onmousemove = function(event) {
+            var flag = document.getElementsByClassName('flag-icon')[0] || false;
+
+            if (flag) {
+                flag.style.top = event.clientY - 50 + 'px';
+                flag.style.left = event.clientX + 10    + 'px';
+            }
+        };
+
         countryElements[i].onmouseout = function() {
             wrapper.removeChild(document.getElementsByClassName('flag-icon')[0]);
         };
